@@ -1,1 +1,26 @@
 <!-- TODO : APIキーをGithub secretへ保管 : -->
+fetch(resource, options)
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+
+  <script type="text/javascript">
+
+    function onButtonClick() {
+      fetch(url = "http://localhost:8080/greeting", )
+        .then((response) => {
+            response.json().then((data) => {
+                console.log(data);
+            });
+        })
+        .catch((code) => { console.error("error:" + code); });
+      }
+  </script>
+</head>
+<body>
+  <h2>WCF REST APIのJavaScritp呼び出しデモ</h2>
+  <button onclick="onButtonClick()">API呼び出し</button><br/>
+</body>
+</html>
